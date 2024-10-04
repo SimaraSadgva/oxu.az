@@ -1,0 +1,71 @@
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.live{
+    animation: lives 2s infinite;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+  @keyframes lives {
+    0%{
+    box-shadow: 0 0 0 0 rgba(246,49,71,.6)
+    }
+    70%{
+        box-shadow: 0 0 0 6px rgba(246,49,71,0)
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(246,49,71,0);
+    }
+  }
+  .desktop{
+    display: none!important;
+    scrollbar-color: none;
+  }
+  .deskt-marq{
+    display: none!important;
+  
+  }
+  .mobile{
+    display: flex!important;
+    scrollbar-color: none;
+  }
+@media only screen and (min-width: 767px){
+.mobile{
+  display: none!important;
+  scrollbar-color: none;
+}
+.mobile-marq{
+  display: none!important;
+  
+}
+
+.deskt-marq{
+  display: block!important;
+
+}
+.desktop{
+  display: flex!important;
+  scrollbar-color: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+}
+
+

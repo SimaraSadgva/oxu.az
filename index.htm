@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="css/stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="xəbər.ico" type="image/x-icon">
+    <title>xəbərAl</title>
+</head>
+
+<body class="relative">
+    
+    <header class="w-full relative ">
+        <nav>
+
+            <div class="bg-white w-full lg:w-[100%] lg:mx-auto fixed top-0">
+                <div class="desktop-marq relative w-full deskt-marq">
+                    <marquee scrollamount="9" class="bg-[#051D39] text-white p-2 gap-4" direction="left">
+                        <a href="#" class="mx-2 font-bold">✧Son Xəbərlər.......</a>
+                        <a href="#" class="mx-2"></a>∙Şok</a>
+                        <a href="#" class="mx-2">∙Şok</a>
+                        <a href="#" class="mx-">∙Şok</a>
+                        <a href="#" class="mx-2">∙Şok</a>
+                        <a href="#" class="mx-2">∙Şok</a>
+                        <a href="#" class="mx-2 font-bold">✧Diqqətdə qalın birazdan yayınlanacaq...</a>
+                    </marquee>
+                    <div
+                        class="icons-marq absolute top-0 bg-[#051D39] flex items-center justify-center w-[20%] z-90 p-3">
+                        <i class="fa-solid fa-bolt text-white "></i>
+                    </div>
+                </div>
+                <div class="head-top flex items-center justify-between gap-6 w-[90%] mx-auto">
+                    <a class="logo flex items-center justify-start w-[50%] lg:w-[55%] gap-5 p-4">
+                        <img src="img/AVOjWzrES8VbbZviU57gbi49tXeYNis7PgTFdHgd.svg"
+                            class="w-[55%] lg:w-[70%] object-cover" alt="">
+                        <img src="img/f.webp" class="w-[20%] object-contain lg:w-[20%]" alt="">
+                    </a>
+
+                    <div class="live-silder desktop flex items-center justify-center flex-row   lg:w-[70%]">
+                        <div class="live-content px-6  bg-white">
+                            <a href="#"
+                                class="bg-[#f63147] flex live items-center justify-center w-[82px] h-[30px] p-2 text-white uppercase rounded-[16px] font-bold gap-3">
+                                <img src="img/live.png" alt="" class="w-[30px] object-cover">Live</a>
+                        </div>
+
+                        <div class="mobil-slider relative overflow-hidden flex items-center justify-between py-4 mx-3">
+
+
+
+                            <div
+                                class="mobil-slider overflow-x-auto flex items-center justify-start gap-4 py-4 mx-3 no-scrollbar">
+                                <ul class="slider-content flex items-center space-x-5 w-full">
+                                    <a class="slider-card text-nowrap border rounded-2xl p-2">İran-İsrail
+                                        münasibətləri</a>
+                                    <a class="slider-card border text-nowrap rounded-2xl p-2">UEFA Çempionlar Liqası</a>
+                                    <a class="slider-card border text-nowrap rounded-2xl p-2">COP29</a>
+                                    <a class="slider-card border text-nowrap  rounded-2xl p-2">UEFA Konfrans Liqası</a>
+                                    <a class="slider-card border rounded-2xl text-nowrap p-2">İran-İsrail
+                                        münasibətləri</a>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="deyisclosd" class="left flex items-center justify-center gap-5  w-[50%] ">
+                        <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                        <a
+                            class="border-[#313131] border-2 h-[30px] rounded-md flex w-[40px] items-center justify-center">Ru</a>
+                        <i id="bagla" onclick="handleMenuClick()" class="fa-solid fa-bars text-3xl"></i>
+                    </div>
+                </div>
+
+                <div class="live-silder mobile flex   justify-center flex-row   w-full">
+                    <div class="live-content px-6 mt-5  bg-white">
+                        <a href="#"
+                            class="bg-[#f63147] flex live items-center justify-center w-[82px] h-[30px] p-2 text-white uppercase rounded-[16px] font-bold gap-3">
+                            <img src="img/live.png" alt="" class="w-[30px] object-cover">Live</a>
+                    </div>
+                    <div class="mobil-slider   overflow-x-auto flex items-center justify-start gap-4 py-4 mx-3">
+
+                        <ul class="slider-content flex items-center space-x-5 w-full  ">
+                            <a class="slider-card text-nowrap  border rounded-2xl  p-2">İran-İsrail münasibətləri</a>
+                            <a class="slider-card border text-nowrap rounded-2xl  p-2 "> UEFA Çempionlar Liqası</a>
+                            <a class="slider-card border text-nowrap rounded-2xl p-2">COP29</a>
+                            <a class="slider-card border text-nowrap p-2 rounded-2xl"> UEFA Konfrans Liqası</a>
+                            <a class="slider-card border rounded-2xl text-nowrap p-2 ">İran-İsrail münasibətləri </a>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="bars" class="menu-bar-mobile  bg-[#FAFDFC] z-90  h-full">
+                    <div style="display: none;" id="menuopen"
+                        class="mobile-content-bar bg-[#FAFDFC] w-full h-full z-10 fixed  overflow-y-auto top-0">
+                        <div class="top-menu flex items-center gap-4 p-5  justify-between">
+                            <a class="logo flex items-center justify-start w-[50%] lg:w-[55%] gap-5 p-4">
+                                <img src="img/AVOjWzrES8VbbZviU57gbi49tXeYNis7PgTFdHgd.svg"
+                                    class="w-[55%] lg:w-[40%] object-cover" alt="">
+                                <img src="img/f.webp" class="w-[20%] object-contain lg:w-[15%]" alt="">
+                            </a>
+                            <div class="flex items-center gap-4">
+
+                                <label class="relative cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer" checked />
+                                    <div
+                                        class="w-14 h-8 flex items-center bg-transparent border-[3px] border-[#5F6261] peer-checked:border-[#007bff] rounded-full peer peer-checked:after:translate-x-full after:absolute after:left-[5px] peer-checked:after:left-[10px] peer-checked:after:border-[#007bff] after:bg-transparent after:border-4 after:border-[#5F6261] after:rounded-full after:h-5 after:w-5 after:transition-all">
+                                    </div>
+                                </label>
+                                <div class="closd">
+                                    <i onclick="closedmenu()" class="fa-solid fa-xmark text-2xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-media flex items-center  justify-center gap-5 mx-auto p-5 px-6">
+
+                            <a href="#" class="bg-[#F3F3F3]  flex items-center justify-center rounded-[50%] p-3"><i
+                                    class="fa-brands fa-facebook text-[#1877F2] text-xl"></i></a>
+                            <a href="#" class="bg-[#F3F3F3]  flex items-center justify-center rounded-[50%] p-3"><i
+                                    class="fa-brands fa-x-twitter text-xl"></i></a>
+                            <a href="#" class="bg-[#F3F3F3]  flex items-center justify-center rounded-[50%] "><img
+                                    src="img/telegram.png" alt="" class="w-[35px]  p-[5px] object-cover"></a>
+                            <a href="#" class="bg-[#F3F3F3]  flex items-center justify-center rounded-[50%] "><img
+                                    src="img/whatsapp.png" alt="" class="w-[40px] p-[5px] object-cover"></a>
+                            <a href="#"
+                                class="bg-[#F3F3F3]  flex items-center p-[5px] justify-center rounded-[50%] "><img
+                                    src="img/instagram.png" class="w-[35px]  object-cover" alt=""></a>
+                        </div>
+                        <div class="list-menu p-3 items-center justify-center flex">
+                            <ul class="flex  justify-center p-3  flex-wrap  gap-5 w-[90%]">
+                                <li class="border-2 p-2 rounded-[16px]"><a href="/" class="text-xl">Ana səhifə</a></li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/siyaset" class="text-xl">
+                                        <span itemprop="name">Siyasət</span>
+                                    </a>
+                                </li class="border-2 p-2 rounded-[16px]">
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/iqtisadiyyat" class="text-xl">
+                                        <span itemprop="name">İqtisadiyyat</span>
+                                    </a>
+                                </li class="border-2 p-2 rounded-[16px]">
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/cemiyyet" class="text-xl">
+                                        <span itemprop="name">Cəmiyyət</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/ordu" class="text-xl">
+                                        <span itemprop="name">Ordu</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/shou-biznes" class="text-xl">
+                                        <span itemprop="name">Şou-biznes</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/kriminal" class="text-xl">
+                                        <span itemprop="name">Kriminal</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/idman" class="text-xl">
+                                        <span itemprop="name">İdman</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/medeniyyet" class="text-xl">
+                                        <span itemprop="name">Mədəniyyət</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/dunya" class="text-xl">
+                                        <span itemprop="name">Dünya</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/musahibe" class="text-xl">
+                                        <span itemprop="name">Müsahibə</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/turizm" class="text-xl">
+                                        <span itemprop="name">Turizm</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/ikt" class="text-xl">
+                                        <span itemprop="name">İKT</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/baku-tv" class="text-xl">
+                                        <span itemprop="name">Baku TV</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/cinemastercard" class="text-xl">
+                                        <span itemprop="name">CineMastercard</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/digar" class="text-xl">
+                                        <span itemprop="name">Digər</span>
+                                    </a>
+                                </li>
+                                <li class="border-2 p-2 rounded-[16px]">
+                                    <a itemprop="url" href="https://oxu.az/maraqli" class="text-xl">
+                                        <span itemprop="name">Maraqlı</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-btm flex items-center justify-center gap-4 mx-auto w-[90%]">
+                            <span
+                                class="flex flex-col  items-center p-3 justify-center bg-[#EFF1F0] rounded-xl min-2-[94px] min-h-[80px] text-[13px] "><img
+                                    src="img/information.png" alt="">
+                                Haqqımızda</span>
+                            <span
+                                class="flex items-center flex-col p-3 justify-center  bg-[#EFF1F0] rounded-xl  min-2-[94px] min-h-[80px] "><img
+                                    src="img/megaphone.png" alt="">
+                                Reklam</span>
+                            <span
+                                class="flex items-center flex-col p-3 justify-center  bg-[#EFF1F0] rounded-xl min-2-[94px] min-h-[80px]  "><img
+                                    src="img/telephone.png" alt="">
+                                Əlaqə</span>
+                        </div>
+
+                        <div class="yukle-main flex items-center justify-center w-[90%] gap-5 p-5 mx-auto">
+                            <span class="bg-[#051D39] flex items-center justify-center  rounded-lg  h-14 "><img
+                                    src="img/play.png" class="w-[70%]  object-contain" alt=""></span>
+                            <span class="bg-[#051D39]   flex items-center justify-center  rounded-lg  h-14"><img
+                                    src="img/app.png " class="w-[70%] object-contain" alt=""></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="desktop-marq relative w-full mobile-marq ">
+                    <marquee scrollamount="9" class="bg-[#051D39] text-white p-2 gap-4" direction="left">
+                        <a href="#" class="mx-2 font-bold">✧Son Xəbərlər.......</a>
+                        <a href="#" class="mx-2"></a>∙Şok</a>
+                        <a href="#" class="mx-2">∙Şok</a>
+                        <a href="#" class="mx-">∙Şok</a>
+                        <a href="#" class="mx-2">∙Şok</a>
+                        <a href="#" class="mx-2">∙Şok</a>
+                        <a href="#" class="mx-2 font-bold">✧Diqqətdə qalın birazdan yayınlanacaq...</a>
+                    </marquee>
+                    <div
+                        class="icons-marq absolute top-0  bg-[#051D39] flex items-center justify-center w-[20%] z-90 p-3">
+                        <i class="fa-solid fa-bolt text-white "></i>
+                    </div>
+                </div>
+        </nav>
+        <div id="desktopbar" class="desktop-bars w-full min-h-[10px]  hidden fixed top-[150px] ">
+            <div class="list-menu  p-8 flex bg-gradient-to-b from-[#F1F8FA] to-[#FFFFFF] w-full ">
+                <ul class="flex  justify-center p-5  flex-wrap  mx-auto gap-9 w-[60%]">
+                    <li class="border-2 p-2 rounded-[16px]"><a href="/" class="text-xl">Ana səhifə</a></li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/siyaset" class="text-xl">
+                            <span itemprop="name">Siyasət</span>
+                        </a>
+                    </li class="border-2 p-2 rounded-[16px]">
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/iqtisadiyyat" class="text-xl">
+                            <span itemprop="name">İqtisadiyyat</span>
+                        </a>
+                    </li class="border-2 p-2 rounded-[16px]">
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/cemiyyet" class="text-xl">
+                            <span itemprop="name">Cəmiyyət</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/ordu" class="text-xl">
+                            <span itemprop="name">Ordu</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/shou-biznes" class="text-xl">
+                            <span itemprop="name">Şou-biznes</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/kriminal" class="text-xl">
+                            <span itemprop="name">Kriminal</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/idman" class="text-xl">
+                            <span itemprop="name">İdman</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/medeniyyet" class="text-xl">
+                            <span itemprop="name">Mədəniyyət</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/dunya" class="text-xl">
+                            <span itemprop="name">Dünya</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/musahibe" class="text-xl">
+                            <span itemprop="name">Müsahibə</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/turizm" class="text-xl">
+                            <span itemprop="name">Turizm</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/ikt" class="text-xl">
+                            <span itemprop="name">İKT</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/baku-tv" class="text-xl">
+                            <span itemprop="name">Baku TV</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/cinemastercard" class="text-xl">
+                            <span itemprop="name">CineMastercard</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/digar" class="text-xl">
+                            <span itemprop="name">Digər</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/maraqli" class="text-xl">
+                            <span itemprop="name">Maraqlı</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contant flex items-center justify-between w-full p-4">
+                <div class="contact-left mx-4">
+                    <h3 class="text-2xl">Karyera</h3>
+                    <a href="#" class="text-lg">cv@oxu.az</a>
+                </div>
+                <div class="contact-rght mx-4">
+                    <h3 class="text-2xl">Ümumi sorğular üçün</h3>
+                    <p class="text-lg">editor@oxu.az, 055 224 76 86,</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+    <main class="lg:max-w-[1200px] lg:m-auto">
+        
+
+        <div class="w-[50px] h-full bg-[rgba(250, 250, 249, 0.88)] opacity-25 fixed left-0 ">
+            <div>
+                <a class="border top-4 rounded-2xl p-2 text-black " href="">RU</a>
+            </div>
+        </div>
+
+        <a href="pages/news.htm" target="_blank">
+            <div class="mains flex flex-wrap justify-center p-2 mt-[150px]">
+                <div
+                class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-[330px] max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
+                <div class="">
+                    <img src="img/deadpool.jpg" class="w-full h-[230px] object-cover" />
+                </div>
+        
+                <div class="p-3">
+                    <span class="text-gray-500 font-bold text-sm">🗒 04 okt, 2024 / 12:28</span> <i class="fa-solid fa-eye text-gray-400 pl-4"></i><span class="text-gray-600 p-1 text-sm">54</span>
+                    <p class="mt-4 text-sm text-gray-500 leading-relaxed">
+                        Marvel's dark superhero comedy "Deadpool & Wolverine," which opened to a historic box-office performance in July, continues to break records following its theatrical release.
+        Just one day after the digital release of "Deadpool & Wolverine" on Tuesday.
+                    </p>
+                    <div class="flex justify-between mt-4">
+                        <a class="uppercase text-sm tracking-wider  text-blue-400 font-bold" href="">CƏMİYYƏT</a>
+                        <div class="flex justify-center items-center">
+                            <span class="pr-3 text-gray-600"><i class="fa-regular fa-thumbs-up pr-1"></i>5</span>
+                            <i class="fa-regular fa-thumbs-down text-orange-500 pr-1"></i>20
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div
+                class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-[330px] max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
+                <div class="">
+                    <img src="img/minion.jpg" class="w-full h-[230px] object-cover" />
+                </div>
+        
+                <div class="p-3">
+                    <span class="text-gray-500 font-bold text-sm">🗒 04 okt, 2024 / 12:28</span> <i class="fa-solid fa-eye text-gray-400 pl-4"></i><span class="text-gray-600 p-1 text-sm">54</span>
+                    <p class="mt-4 text-sm text-gray-500 leading-relaxed">
+                        The Despicable Me franchise is back, and whether there is a Despicable Me 4 post-credits scene with Gru and the Minions is known. The fourth installment in the main series brings the focus back to Gru (Steve Carell) as an adult with his new family.
+                    </p>
+                    <div class="flex justify-between mt-4">
+                        <a class="uppercase text-sm tracking-wider  text-blue-400 font-bold" href="">CƏMİYYƏT</a>
+                        <div class="flex justify-center items-center">
+                            <span class="pr-3 text-gray-600"><i class="fa-regular fa-thumbs-up pr-1"></i>5</span>
+                            <i class="fa-regular fa-thumbs-down text-orange-500 pr-1"></i>20
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div
+                class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-[330px] max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
+                <div class="">
+                    <img src="img/inside.avif" class="w-full h-[230px] object-cover" />
+                </div>
+        
+                <div class="p-3">
+                    <span class="text-gray-500 font-bold text-sm">🗒 04 okt, 2024 / 12:28</span> <i class="fa-solid fa-eye text-gray-400 pl-4"></i><span class="text-gray-600 p-1 text-sm">54</span>
+                    <p class="mt-4 text-sm text-gray-500 leading-relaxed">
+                        The highest grossing animated movie of all time, Disney’s Inside Out 2, drew 30.5 million views worldwide on Disney+ in its first five days, not only becoming the No. 1 film premiere YTD, but even more.
+        The sequel dropped on Disney+ on Sept. 25, 
+                    </p>
+                    <div class="flex justify-between mt-4">
+                        <a class="uppercase text-sm tracking-wider  text-blue-400 font-bold" href="">CƏMİYYƏT</a>
+                        <div class="flex justify-center items-center">
+                            <span class="pr-3 text-gray-600"><i class="fa-regular fa-thumbs-up pr-1"></i>5</span>
+                            <i class="fa-regular fa-thumbs-down text-orange-500 pr-1"></i>20
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+             </div>
+        </a>
+        
+     
+    </main>
+<footer>
+
+    <div class="footer-content bg-[#EFF1F0] p-5 lg:flex justify-evenly py-5  w-full lg:flex-row">
+        <div class="lg:mx-10  items-center lg:w-[40%] justify-start flex flex-col lg:flex-row">
+            <img src="img/logo-big.svg" alt="logo" class="hidden lg:block" />
+            <img src="img/AVOjWzrES8VbbZviU57gbi49tXeYNis7PgTFdHgd.svg" alt="logo" class="w-44 mt-10 mb-10 lg:hidden" />
+     <div class="texts flex flex-col  gap-4 mx-6 text-gray-700">
+        <p>Bütün hüquqlar qorunur © 2013-2024</p>
+        <p>Oxu.Az 24 saat ərzində, Azərbaycan və rus dillərində, ölkədə və dünyada baş verən ən aktual və maraqlı hadisələr barədə operativ xəbərlər, oxucuları və cəmiyyəti maraqlandıran suallara cavablar, analitik məqalələr, foto və videohesabatlar hazırlayır.
+            <div class="social-media flex items-center  justify-center px-2">
+
+                <a href="#" class="bg-[#F3F3F3]  flex items-center justify-center rounded-[50%] p-3"><i
+                        class="fa-brands fa-facebook text-[#1877F2] text-xl"></i></a>
+                <a href="#" class="bg-[#F3F3F3]  flex items-center justify-center rounded-[50%] p-3"><i
+                        class="fa-brands fa-x-twitter text-xl"></i></a>
+                <a href="#" class="bg-[#F3F3F3]  flex items-center justify-center rounded-[50%] "><img
+                        src="img/telegram.png" alt="" class="lg:w-[30px] lg:h-[27px] w-[30px] h-[30px] p-[5px] object-cover"></a>
+                <a href="#" class="bg-[#F3F3F3]  flex items-center justify-center rounded-[50%] "><img
+                        src="img/whatsapp.png" alt="" class="lg:w-[30px] lg:h-[27px] w-[30px] h-[30px] p-[5px] object-cover"></a>
+                <a href="#" class="bg-[#F3F3F3]  flex items-center p-[5px] justify-center rounded-[50%] "><img
+                        src="img/instagram.png" class="lg:w-[30px] lg:h-[27px] w-[25px] h-[25px] object-cover" alt=""></a>
+            </div>
+        </p>
+        
+       
+     </div>
+        </div>
+        <div class="footer-right lg:items-start lg:justify-start flex flex-row p-2 w-[80%] lg:w-[20%] gap-4">
+            
+                <ul class=" mt-6">
+                    <li class="flex gap-4 flex-col">Karyera <a href="#" class="underline">cv@oxu.az</a></li>
+                    <li class="flex flex-col">Ümumi sorğular üçün <a href="#">editor@oxu.az</a> <span class="underline">055 224 76 86</span></li>
+                </ul>
+        </div>
+        <div class="">
+            <ul class=" mt-6">
+                <li class="flex flex-col underline">Saytda reklam</li>
+                <li class="flex flex-col underline mt-4">Bizimlə əlaqə</li>
+                <li class="flex flex-col underline  mt-4">Məxfilik siyasəti</li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
