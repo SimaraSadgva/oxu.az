@@ -17,6 +17,13 @@
 </head>
 
 <body class="relative">
+    <!-- <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="title" id="title" /> <br>
+        <input type="text" placeholder="img" name="" id="img" /> <br>
+        <input type="number" placeholder="view" id="view" /> <br>
+        <textarea placeholder="metn" id="description"></textarea> <br>
+        <button>Gonder meni!</button>
+    </form> -->
     
     <header class="w-full relative ">
         <nav>
@@ -361,88 +368,33 @@
 
 
     </header>
+          
+    <!-- <main class="lg:max-w-[1200px] lg:m-auto">
 
-    <main class="lg:max-w-[1200px] lg:m-auto">
-        
-
-        <div class="w-[50px] h-full bg-[rgba(250, 250, 249, 0.88)] opacity-25 fixed left-0 ">
-            <div>
-                <a class="border top-4 rounded-2xl p-2 text-black " href="">RU</a>
-            </div>
-        </div>
-
+        <div>
+            <button class="bg-blue-500 cursor-pointer w-[300px] h-[100px]">Admin Panel'e kec</button>
+          </div>
         <a href="pages/news.htm" target="_blank">
-            <div class="mains flex flex-wrap justify-center p-2 mt-[150px]">
-                <div
-                class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-[330px] max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
-                <div class="">
-                    <img src="img/deadpool.jpg" class="w-full h-[230px] object-cover" />
-                </div>
-        
-                <div class="p-3">
-                    <span class="text-gray-500 font-bold text-sm">🗒 04 okt, 2024 / 12:28</span> <i class="fa-solid fa-eye text-gray-400 pl-4"></i><span class="text-gray-600 p-1 text-sm">54</span>
-                    <p class="mt-4 text-sm text-gray-500 leading-relaxed">
-                        Marvel's dark superhero comedy "Deadpool & Wolverine," which opened to a historic box-office performance in July, continues to break records following its theatrical release.
-        Just one day after the digital release of "Deadpool & Wolverine" on Tuesday.
-                    </p>
-                    <div class="flex justify-between mt-4">
-                        <a class="uppercase text-sm tracking-wider  text-blue-400 font-bold" href="">CƏMİYYƏT</a>
-                        <div class="flex justify-center items-center">
-                            <span class="pr-3 text-gray-600"><i class="fa-regular fa-thumbs-up pr-1"></i>5</span>
-                            <i class="fa-regular fa-thumbs-down text-orange-500 pr-1"></i>20
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div
-                class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-[330px] max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
-                <div class="">
-                    <img src="img/minion.jpg" class="w-full h-[230px] object-cover" />
-                </div>
-        
-                <div class="p-3">
-                    <span class="text-gray-500 font-bold text-sm">🗒 04 okt, 2024 / 12:28</span> <i class="fa-solid fa-eye text-gray-400 pl-4"></i><span class="text-gray-600 p-1 text-sm">54</span>
-                    <p class="mt-4 text-sm text-gray-500 leading-relaxed">
-                        The Despicable Me franchise is back, and whether there is a Despicable Me 4 post-credits scene with Gru and the Minions is known. The fourth installment in the main series brings the focus back to Gru (Steve Carell) as an adult with his new family.
-                    </p>
-                    <div class="flex justify-between mt-4">
-                        <a class="uppercase text-sm tracking-wider  text-blue-400 font-bold" href="">CƏMİYYƏT</a>
-                        <div class="flex justify-center items-center">
-                            <span class="pr-3 text-gray-600"><i class="fa-regular fa-thumbs-up pr-1"></i>5</span>
-                            <i class="fa-regular fa-thumbs-down text-orange-500 pr-1"></i>20
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div
-                class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-[330px] max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
-                <div class="">
-                    <img src="img/inside.avif" class="w-full h-[230px] object-cover" />
-                </div>
-        
-                <div class="p-3">
-                    <span class="text-gray-500 font-bold text-sm">🗒 04 okt, 2024 / 12:28</span> <i class="fa-solid fa-eye text-gray-400 pl-4"></i><span class="text-gray-600 p-1 text-sm">54</span>
-                    <p class="mt-4 text-sm text-gray-500 leading-relaxed">
-                        The highest grossing animated movie of all time, Disney’s Inside Out 2, drew 30.5 million views worldwide on Disney+ in its first five days, not only becoming the No. 1 film premiere YTD, but even more.
-        The sequel dropped on Disney+ on Sept. 25, 
-                    </p>
-                    <div class="flex justify-between mt-4">
-                        <a class="uppercase text-sm tracking-wider  text-blue-400 font-bold" href="">CƏMİYYƏT</a>
-                        <div class="flex justify-center items-center">
-                            <span class="pr-3 text-gray-600"><i class="fa-regular fa-thumbs-up pr-1"></i>5</span>
-                            <i class="fa-regular fa-thumbs-down text-orange-500 pr-1"></i>20
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="cards" class="flex flex-wrap justify-center p-2 mt-[150px]">
         
              </div>
         </a>
         
      
+    </main> -->
+    <main class="lg:max-w-[1200px] lg:m-auto p-4">
+        <div class="flex justify-center">
+            <button class="bg-blue-500 text-white cursor-pointer w-[300px] h-[100px] rounded-lg shadow-lg hover:bg-blue-600 transition-colors">
+                Admin Panel'e geç
+            </button>
+        </div>
+        <a href="pages/news.htm" target="_blank">
+            <div id="cards" class="flex flex-wrap justify-center p-2 mt-[150px]">
+                <!-- Kartlar buraya gelecek -->
+            </div>
+        </a>
     </main>
+    
 <footer>
 
     <div class="footer-content bg-[#EFF1F0] p-5 lg:flex justify-evenly py-5  w-full lg:flex-row">

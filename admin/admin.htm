@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <main class="flex justify-between w-full">
+        <div class="min-h-screen bg-gray-900 w-[20%] p-5 top-0 left-0 z-50">
+            <h1 class="text-2xl text-white mb-6 text-center">Admin</h1>
+            <nav class="flex flex-col space-y-2">
+                <div class="flex items-center mb-4 w-full h-16 p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                    <img src="https://media.istockphoto.com/id/899347890/vector/online-graphical-report-icon.jpg?s=612x612&w=0&k=20&c=hmd7aTt5jfYbKHXizrqwyq1Gz0VN4Fj-hjvz4_w24qU=" class="h-8" alt="dashboard">
+                    <h3 class="ml-4">Dashboard</h3>
+                </div>
+        
+                <div  class="flex mb-4 items-center w-full h-16 p-4 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png" class="h-8" alt="news">
+                    <span class="ml-4">News</span>
+                </div>
+        
+                <div class="flex items-center w-full h-16 mt-4 p-4 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png" class="h-8" alt="report">
+                    <h3 class="ml-4">Report</h3>
+                </div>
+        
+                <div class="flex items-center w-full h-16 p-4 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png" class="h-8" alt="profile">
+                    <h3 class="ml-4">Profile</h3>
+                </div>
+        
+                <div class="flex items-center w-full h-16 p-4 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png" class="h-8" alt="settings">
+                    <h3 class="ml-4">Settings</h3>
+                </div>
+        
+                <div class="flex items-center w-full h-16 p-4 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png" class="h-8" alt="logout">
+                    <h3 class="ml-4">Logout</h3>
+                </div>
+            </nav>
+        </div>
+        
+      <div class="flex flex-col justify-around items-center w-[80%]">
+        <div class="my-[50px]">
+          <button onclick="handlePopup()" class="bg-green-600 w-[200px] text-white p-2 rounded-md">
+            Xəbər yerləşdir
+          </button>
+        </div>
+        <div
+          onclick="handlePopup()"
+          id="popup"
+          class="w-full h-full flex justify-center items-center fixed top-[-100%] backdrop-blur-[5px]"
+        >
+          <form onsubmit="handleSubmit(event)" onclick="preventClick(event)" class="w-[500px] flex flex-col gap-[8px] border-2 border-green-800 text-green-950 p-4 rounded-md">
+            <h1 class="text-[30px] font-semibold text-center mb-3">
+              Xəbər yerləşdir
+            </h1>
+            <label class="font-semibold" for="title">Başlıq əlavə et: </label>
+            <input
+              class="border border-gray-400 rounded-md"
+              id="title"
+              type="text"
+              required ="required"
+            />
+            <label class="font-semibold" for="desc">Mətn əlavə et: </label>
+            <textarea
+              class="border border-gray-400 rounded-md outline-0 p-3"
+              id="desc"
+              type="text"
+              required ="required"
+              rows="7"
+            ></textarea>
+            <label class="font-semibold" for="cover">Şəkil əlavə et: </label>
+            <input
+              class="border border-gray-400 rounded-md"
+              id="cover"
+              type="text"
+              required ="required"
+            />
+            <label class="font-semibold" for="date">Tarix əlavə et: </label>
+            <input
+              class="border border-gray-400 rounded-md"
+              id="date"
+              type="date"
+              required ="required"
+            />
+            <label class="font-semibold" for="baxis">Baxış sayı: </label>
+            <input
+              class="border border-gray-400 rounded-md"
+              id="baxis"
+              type="baxis"
+              required ="required"
+            />
+            <button
+              type="submit"
+              class="w-full lg:w-[200px] m-auto bg-green-800 text-white p-2 rounded-md mt-5"
+            >
+              Yüklə
+            </button>
+          </form>
+        </div>
+        <div class="container p-2 mx-auto sm:p-4 text-gray-800">
+          <h2 class="mb-4 text-3xl font-bold text-center leading-tight">
+            Xəbərlər
+          </h2>
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <!-- <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup> -->
+              <thead class="bg-blue-500">
+                <tr class="text-left">
+                  <th class="p-3">Title</th>
+                  <th class="p-3">Description</th>
+                  <th class="p-3">Date</th>
+                  <th class="p-3">View</th>
+                  <th class="p-3 text-center">Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
