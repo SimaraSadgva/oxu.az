@@ -53,9 +53,12 @@
         <div
           onclick="handlePopup()"
           id="popup"
-          class="w-full h-full flex justify-center items-center fixed top-[-100%] backdrop-blur-[5px]"
+          class="w-full h-full bg-[#00000018] flex justify-center items-center fixed top-[-100%] backdrop-blur-[5px]"
         >
-          <form onsubmit="handleSubmit(event)" onclick="preventClick(event)" class="w-[500px] flex flex-col gap-[8px] border-2 border-green-800 text-green-950 p-4 rounded-md">
+
+        <!-- burada onsubmit ise men submit etdym zaman -->
+         
+          <form id="form" onsubmit="handleSubmit(event)" onclick="preventClick(event)" class="bg-white w-[500px] flex flex-col gap-[8px] border-2 border-green-800 text-green-950 p-4 rounded-md">
             <h1 class="text-[30px] font-semibold text-center mb-3">
               Xəbər yerləşdir
             </h1>
@@ -95,7 +98,8 @@
               type="baxis"
               required ="required"
             />
-            <button
+            <!-- burada type submit duymeye basdgm zaman -->
+            <button id="button"
               type="submit"
               class="w-full lg:w-[200px] m-auto bg-green-800 text-white p-2 rounded-md mt-5"
             >
